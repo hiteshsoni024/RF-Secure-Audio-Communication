@@ -42,7 +42,7 @@ This project implements a real-time password-protected audio communication syste
 ![Screenshot 2025-04-23 082709](https://github.com/user-attachments/assets/8780c424-c945-490b-9329-d9640ffdd257)
 
 ---
-📄 Project Report - [RF-based secure audio communication with Encription.pdf](https://github.com/user-attachments/files/20835467/RF-based.secure.audio.communication.with.Encription.pdf)
+📄 Project Report - [Acom_project01.pdf](https://github.com/user-attachments/files/20835586/Acom_project01.pdf)
 
 
 ## 🤝 Contributors
