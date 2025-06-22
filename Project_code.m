@@ -32,6 +32,21 @@ encryptedAudio = filteredAudio .* key_audio;
 modulatedSignal = fmmod(encryptedAudio, fc_carrier, fs, freqDev);
 demodulatedSignal = fmdemod(modulatedSignal, fc_carrier, fs, freqDev);
 
+
+% error of calculation
+error = norm(filteredAudio - decryptedAudio);  
+disp(['calculation: ', num2str(error)]);
+
+% error correction
+filteredAudio = filteredAudio / max(abs(filteredAudio));  
+encryptedAudio = filteredAudio .* key_audio;
+decryptedAudio = encryptedAudio .* key_audio;
+
+% error of calculation
+error = norm(filteredAudio - decryptedAudio);  
+disp(['calculation: ', num2str(error)]);
+
+
 %Decrypt the Demodulated Audio
 decryptedAudio = demodulatedSignal .* key_audio;
 
